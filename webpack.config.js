@@ -8,7 +8,7 @@ const PATHS = {
 
 module.exports = {
 	entry: {
-		app: PATHS.app
+		app: ['babel-polyfill', PATHS.app]
 	},
 
 	output: {
