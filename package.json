@@ -1,0 +1,35 @@
+{
+  "name": "reactest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.7.2",
+    "babel-loader": "^6.2.4",
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "flux": "^2.1.1",
+    "node-uuid": "^1.4.7",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.0.1",
+    "style-loader": "^0.13.0",
+    "underscore": "^1.8.3",
+    "webpack": "^1.12.14"
+  },
+  "dependencies": {
+    "babel-core": "^6.7.0",
+    "babel-preset-react": "^6.5.0",
+    "chart.js": "^1.1.0",
+    "node-uuid": "^1.4.7",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-motion": "^0.4.2",
+    "redux-localstorage": "^0.4.0"
+  }
+}
