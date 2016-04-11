@@ -55,7 +55,7 @@ export default class City extends Component {
 		this.createChart();
 	}
 
-	componentWillUpdate(){
+	componentDidUpdate(){
 		this.createChart();
 	}
 
@@ -173,7 +173,7 @@ export default class City extends Component {
 
 							{FiltersArray.map((filter, index) =>
 								<div key={index} className={`city-data-canvas-box city-data-canvas-box-${filter}`}>
-									<canvas id={`${this.props.data.uuid}-${filter}`} width="100%" height="180"></canvas>
+									<canvas id={`${this.props.data.uuid}-${filter}`} height="180"></canvas>
 								</div>
 							)}
 

@@ -27848,8 +27848,8 @@
 				this.createChart();
 			}
 		}, {
-			key: "componentWillUpdate",
-			value: function componentWillUpdate() {
+			key: "componentDidUpdate",
+			value: function componentDidUpdate() {
 				this.createChart();
 			}
 		}, {
@@ -27922,7 +27922,7 @@
 					onClick: function onClick() {
 						return _this5.handleRemoveClick();
 					} }, "x"))), _react2.default.createElement("div", { className: "city-data" }, _react2.default.createElement("div", { className: "city-data-left" }, _react2.default.createElement("div", { className: "city-data-left-block" }, _react2.default.createElement("div", { className: "city-data-left-block-title" }, this.props.data.temp, _react2.default.createElement("i", { className: "wi " + this.props.data.icon })), _react2.default.createElement("div", { className: "city-data-left-block-desc" }, this.props.data.description.description)), _react2.default.createElement("div", { className: "city-data-left-block" }, _react2.default.createElement("div", { className: "city-data-left-block-title" }, this.props.data.wind.speed.toFixed(0), "м/с"), _react2.default.createElement("div", { className: "city-data-left-block-desc" }, "Северо-западный")), _react2.default.createElement("div", { className: "city-data-left-block" }, _react2.default.createElement("div", { className: "city-data-left-block-title" }, this.props.data.pressure.toFixed(0), "мм"), _react2.default.createElement("div", { className: "city-data-left-block-desc" }, "Давление")), _react2.default.createElement("div", { className: "city-data-left-block" }, _react2.default.createElement("div", { className: "city-data-left-block-title" }, this.props.data.humidity, "%"), _react2.default.createElement("div", { className: "city-data-left-block-desc" }, "Влажность"))), _react2.default.createElement("div", { className: "city-data-right city-canvas-" + this.props.filter }, FiltersArray.map(function (filter, index) {
-					return _react2.default.createElement("div", { key: index, className: "city-data-canvas-box city-data-canvas-box-" + filter }, _react2.default.createElement("canvas", { id: _this5.props.data.uuid + "-" + filter, width: "100%", height: "180" }));
+					return _react2.default.createElement("div", { key: index, className: "city-data-canvas-box city-data-canvas-box-" + filter }, _react2.default.createElement("canvas", { id: _this5.props.data.uuid + "-" + filter, height: "180" }));
 				})))));
 			}
 		}]);
