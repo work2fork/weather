@@ -71,6 +71,7 @@ body {
 .header-container {
   width: 100%;
   min-width: 1000px;
+  max-width: 1400px;
   height: 60px;
   background: #101010;
   color: #ffffff;
@@ -149,6 +150,7 @@ body {
   list-style: none;
   width: 100%;
   min-width: 1000px;
+  max-width: 1400px;
   text-align: center;
 }
 
@@ -275,6 +277,7 @@ body {
   z-index: 3;
   bottom: 0;
   min-width: 1000px;
+  max-width: 1400px;
 }
 
 .footer-form {
