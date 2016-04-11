@@ -70,6 +70,7 @@ body {
 
 .header-container {
   width: 100%;
+  min-width: 1000px;
   height: 60px;
   background: #101010;
   color: #ffffff;
@@ -147,6 +148,7 @@ body {
   padding: 0 0 130px 0;
   list-style: none;
   width: 100%;
+  min-width: 1000px;
   text-align: center;
 }
 
@@ -234,15 +236,8 @@ body {
   float: left;
   display: inline-block;
   padding: 10px;
-}
-
-.city-data-left-block:nth-of-type(2n) {
-  width: calc(100% - 200px);
-  min-width: 160px;
-}
-
-.city-data-left-block:nth-of-type(2n + 1) {
-  width: 160px;
+  width: calc(50% - 20px);
+  min-width: 170px;
 }
 
 .city-data-left-block-title {
@@ -279,6 +274,7 @@ body {
   position: fixed;
   z-index: 3;
   bottom: 0;
+  min-width: 1000px;
 }
 
 .footer-form {
@@ -395,6 +391,7 @@ body {
 .popup {
   position: fixed;
   width: 100%;
+  min-width: 1000px;
   height: 100%;
   z-index: 10;
   text-align: center;

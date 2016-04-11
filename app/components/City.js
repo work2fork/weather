@@ -50,6 +50,7 @@ export default class City extends Component {
 	}
 
 	componentDidMount() {
+		this.addResize();
 		this.autoUpdateStart();
 		this.createChart();
 	}
@@ -58,11 +59,17 @@ export default class City extends Component {
 		this.createChart();
 	}
 
+	addResize(){
+		window.addEventListener("resize", () => {
+			this.createChart();
+		});
+	}
+
 	autoUpdateStart(){
 		this.autoUpdateRequest();
 		this.autoUpdateTimer = setInterval(() => {
 			this.autoUpdateRequest();
-		}, 60*60*3);
+		}, 1000*60*60*3);
 		// обновление раз в три минуты
 	}
 
@@ -76,11 +83,16 @@ export default class City extends Component {
 		FiltersArray.map((filter) => {
 
 			// ty 4 chart.js
-			// TODO: заменить на адекватный рисовальщик графиков, этот багнутый и не чистит канвас .clear() и .destroy()
+			// TODO: заменить на адекватный рисовальщик графиков, chart.js не чистит канвас .clear() и .destroy()
 			canvas = document.getElementById(`${this.props.data.uuid}-${filter}`);
+
+			if (!canvas) {
+				return false;
+			}
+
 			canvasParent = canvas.parentNode;
 			canvasParent.removeChild(canvas);
-			canvasParent.innerHTML = `<canvas id="${this.props.data.uuid}-${filter}" width="400" height="180"></canvas>`;
+			canvasParent.innerHTML = `<canvas id="${this.props.data.uuid}-${filter}" width="${canvasParent.offsetWidth}" height="180"></canvas>`;
 			ctx = document.getElementById(`${this.props.data.uuid}-${filter}`).getContext("2d");
 			this.chart[filter] = new Chart(ctx);
 			this.setChart(this.chart[filter], filter);
@@ -161,7 +173,7 @@ export default class City extends Component {
 
 							{FiltersArray.map((filter, index) =>
 								<div key={index} className={`city-data-canvas-box city-data-canvas-box-${filter}`}>
-									<canvas id={`${this.props.data.uuid}-${filter}`} width="400" height="180"></canvas>
+									<canvas id={`${this.props.data.uuid}-${filter}`} width="100%" height="180"></canvas>
 								</div>
 							)}
 

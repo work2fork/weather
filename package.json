@@ -12,6 +12,7 @@
   "devDependencies": {
     "babel-core": "^6.7.2",
     "babel-loader": "^6.2.4",
+    "babel-plugin-transform-object-assign": "^6.5.0",
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
     "flux": "^2.1.1",

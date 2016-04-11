@@ -23,13 +23,21 @@ module.exports = {
 	module: {
 		loaders: [
 			{
+				test: /(\.js|\.jsx)$/,
+				exclude: /(node_modules)/,
+				loader: 'babel',
+				query: {
+					plugins: ['transform-object-assign']
+				}
+			},
+			{
 				test: /\.jsx?$/,
+				exclude: /(node_modules)/,
 				loaders: [
 					'babel?cacheDirectory,presets[]=react,presets[]=es2015'
 				],
 				include: PATHS.app
 			},
-
 			{
 				test: /\.css$/,
 				loader: "style-loader!css-loader"

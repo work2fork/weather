@@ -11,8 +11,6 @@ import createLogger from 'redux-logger';
 import "./css/weather-icons.min.css";
 import "./css/style.css";
 
-localStorage.clear();
-
 const loggerMiddleware = createLogger();
 const createPersistentStore = compose(
 	persistState(),
