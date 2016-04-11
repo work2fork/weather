@@ -71,7 +71,6 @@ body {
 .header-container {
   width: 100%;
   min-width: 1000px;
-  max-width: 1400px;
   height: 60px;
   background: #101010;
   color: #ffffff;
@@ -84,8 +83,8 @@ body {
 }
 
 .header {
-  width: calc(100% - 320px);
-  min-width: calc(90% - 100px);
+  width: calc(90% - 100px);
+  max-width: 1200px;
   height: 60px;
   display: inline-block;
   text-align: left;
@@ -150,13 +149,12 @@ body {
   list-style: none;
   width: 100%;
   min-width: 1000px;
-  max-width: 1400px;
   text-align: center;
 }
 
 .city {
-  width: calc(100% - 360px);
-  min-width: calc(90% - 100px);
+  width: calc(90% - 100px);
+  max-width: 1200px;
   padding: 20px 0;
   color: #ffffff;
   text-align: left;
@@ -277,7 +275,6 @@ body {
   z-index: 3;
   bottom: 0;
   min-width: 1000px;
-  max-width: 1400px;
 }
 
 .footer-form {
