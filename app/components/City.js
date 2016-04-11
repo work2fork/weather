@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { GraphFilters } from "../actions";
+import { GraphFilters } from "../actions/index";
 import Chart from "chart.js";
 
 let FiltersArray = [];

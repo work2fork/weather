@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 import { ADD_CITY, REMOVE_CITY,
 	       SET_GRAPH_FILTER, SET_ADDING_STATUS,
-	       GraphFilters, AddingStatuses } from './actions'
+	       GraphFilters, AddingStatuses } from './../actions/index'
 import { findIndex } from "underscore";
 
 const { SHOW_TEMP } = GraphFilters;

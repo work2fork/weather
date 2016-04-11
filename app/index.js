@@ -2,9 +2,9 @@ import React from "react";
 import { render } from "react-dom";
 import { createStore, applyMiddleware, compose } from "redux";
 import { Provider } from "react-redux";
-import { requestCity, setGraphFilter, removeCity, GraphFilters } from "./actions";
+import { requestCity, setGraphFilter, removeCity, GraphFilters } from "./actions/index";
 import App from "./App";
-import rootReducer from "./reducers";
+import rootReducer from "./reducers/index";
 import persistState from 'redux-localstorage'
 import thunkMiddleware from 'redux-thunk';
 import createLogger from 'redux-logger';

@@ -1,18 +1,14 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { requestCity, setGraphFilter, removeCity, requestUpdateCity, requestGeo, hidePopup } from "./actions";
+import { requestCity, setGraphFilter, removeCity, requestUpdateCity, requestGeo, hidePopup } from "./actions/index";
 import AddCity from "./components/AddCity";
 import City from "./components/City";
 import CityList from "./components/CityList";
 import GraphFiltersList from "./components/GraphFiltersList";
-import Geo from "./components/geo";
+import Geo from "./components/Geo";
 
 
 class App extends Component {
-
-	componentDidMount(){
-		// http://ip-api.com/json
-	}
 
 	render(){
 		const { dispatch, selectCities, selectGraphFilter, selectAddingStatus, geo } = this.props;
