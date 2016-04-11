@@ -43,12 +43,8 @@ module.exports = {
 				loader: "style-loader!css-loader"
 			},
 			{
-				test: /\.jpg$/,
-				loader: "file-loader"
-			},
-			{
-				test: /\.png$/,
-				loader: "file-loader"
+				test: /\.(jpg|png)$/,
+				loader: "url-loader?limit=1024&name=img/[name].[ext]"
 			}
 		]
 	}
